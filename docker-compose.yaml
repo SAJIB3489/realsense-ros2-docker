@@ -4,6 +4,7 @@ services:
   realsense-ros-jazzy:
     build: .
     image: realsense-ros2-jazzy:latest
+    container_name: realsense-camera-ros2
     restart: unless-stopped
     volumes:
       - /etc/localtime:/etc/localtime:ro
