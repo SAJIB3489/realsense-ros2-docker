@@ -76,3 +76,5 @@ docker compose logs -f
 # Background container
 docker compose logs -f realsense-ros-jazzy
 ```
+
+<img width="1516" height="1170" alt="Screenshot from 2026-04-29 17-40-15" src="https://github.com/user-attachments/assets/1e3de403-5d38-468b-a539-16df3df6ca11" />
