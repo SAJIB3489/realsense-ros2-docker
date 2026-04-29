@@ -1,0 +1,18 @@
+build/
+install/
+log/
+*.pyc
+__pycache__/
+.colcon_install_layout
+
+# VSCode settings & IntelliSense database
+.vscode/
+*.db
+*.db-shm
+*.db-wal
+.vscode/
+# ROS 2 build artifacts
+build/
+install/
+log/
+*.log
