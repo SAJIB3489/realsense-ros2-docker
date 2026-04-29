@@ -2,8 +2,8 @@ version: "3"
 
 services:
   realsense-ros-jazzy:
+    build: .
     image: realsense-ros2-jazzy:latest
-    container_name: realsense-ros2-jazzy
     restart: unless-stopped
     volumes:
       - /etc/localtime:/etc/localtime:ro
