@@ -12,9 +12,13 @@ services:
     devices:
       - "/dev:/dev"
     network_mode: host
+    ipc: host
+    pid: host
+    
     privileged: true
     env_file:
       - .env
-    command: 'bash -c "source /opt/ros/jazzy/setup.bash && ros2 launch realsense2_camera rs_launch.py depth_module.profile:=640x480x15 rgb_camera.profile:=640x480x15"'
+    command: 'bash -c "source /opt/ros/jazzy/setup.bash && ros2 launch realsense2_camera rs_launch.py depth_module.profile:=640x480x30 rgb_camera.profile:=640x480x30"'
 
 # You can remove depth_module.profile:=640x480x30 rgb_camera.profile:=640x480x30 from the command if you want to use the default profiles.
+# If you want to echo the data from other container then add the following lines after 
